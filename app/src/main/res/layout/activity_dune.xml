@@ -5,10 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    tools:context=".Dune">
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        tools:ignore="MissingConstraints" />
+        android:id="@+id/text_view_dune"
+        android:layout_width="407dp"
+        android:layout_height="631dp"
+        android:background="@drawable/dune"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

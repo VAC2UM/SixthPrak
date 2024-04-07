@@ -14,5 +14,7 @@
         android:layout_gravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/bottom_navigation_selected_item_color"
+        app:itemTextColor="@color/bottom_navigation_unselected_item_color"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,13 +25,13 @@ public class SecondaryActivity extends AppCompatActivity {
             bottomNavigationView.setOnNavigationItemReselectedListener(item -> {
                 if (item.getItemId() == R.id.home) {
                     actionBar.setTitle("Главная");
-                    Intent intent = new Intent(SecondaryActivity.this, MainActivity.class);
-                    startActivity(intent);
+//                    Intent intent = new Intent(SecondaryActivity.this, MainActivity.class);
+//                    startActivity(intent);
 //                    Toast.makeText(MainActivity.this, "Домой", Toast.LENGTH_LONG).show();
                 } else if (item.getItemId() == R.id.settings) {
                     actionBar.setTitle("Настройки");
-                    Intent intent = new Intent(SecondaryActivity.this, Settings.class);
-                    startActivity(intent);
+//                    Intent intent = new Intent(SecondaryActivity.this, Settings.class);
+//                    startActivity(intent);
 //                    Toast.makeText(SecondaryActivity.this, "Настройки", Toast.LENGTH_LONG).show();
                 } else if (item.getItemId() == R.id.notification) {
                     actionBar.setTitle("Уведомления");
@@ -48,5 +48,11 @@ public class SecondaryActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.bottom_nav_menu, menu);
         return super.onCreateOptionsMenu(menu);
 
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }
